@@ -9,10 +9,10 @@ public interface ProjectService {
     Project addProject(Project project);
 
     //read
-   List<Project> getProjects();
-   Optional<Project> getProject(int id);
+    List<Project> getProjects();
+    Optional<Project> getProject(int id);
 
-   //update
+    //update
     Project updateProject(Project project);
 
     //delete

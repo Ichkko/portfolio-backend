@@ -10,13 +10,14 @@ public interface UserService {
     User addUser(User user);
     // read
     List<User> getUsers();
-     Optional<User> getUser(int id);
+    Optional<User> getUser(int id);
 
     //update
     User updateUser(User user);
 
     //delete
     void deleteUserById(int id);
+
 
 
 }

@@ -11,10 +11,10 @@ import java.util.Optional;
 @Service
 public class ProjectServieImpl implements ProjectService {
 
-   private ProjectRepository projectRepository;
-   public ProjectServieImpl(ProjectRepository projectRepository) {
-       this.projectRepository = projectRepository;
-   }
+    private ProjectRepository projectRepository;
+    public ProjectServieImpl(ProjectRepository projectRepository) {
+        this.projectRepository = projectRepository;
+    }
 
     @Override
     public Project addProject(Project project) {
@@ -38,6 +38,6 @@ public class ProjectServieImpl implements ProjectService {
 
     @Override
     public void deleteProjectById(int id) {
-    projectRepository.deleteById(id);
+        projectRepository.deleteById(id);
     }
 }

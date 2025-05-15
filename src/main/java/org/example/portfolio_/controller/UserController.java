@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/user")
 public class UserController {
     private final UserService userService;
@@ -33,8 +34,10 @@ public class UserController {
         return userService.updateUser(user);
     }
 
+
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable int id) {
+        userService.deleteUserById(id);
     }
 
 }
